@@ -1,0 +1,227 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url('fonts/CustomFont.ttf') format('truetype');
+}
+
+body {
+  font-family: 'CustomFont', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif; /* Primary font */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+h1, h2 {
+  font-family: 'Open Sans', sans-serif; /* For headings */
+  font-size: 2.5rem; /* Large enough to stand out */
+  font-weight: bold;
+  color: #333333; /* Neutral dark gray */
+  text-align: center; /* Centered title */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: inline;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+  display:inline-block;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+header {
+  background: #1592f1;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: block;
+}
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+header p {
+  margin: 5px 0;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-column,
+.right-column {
+  width: 48%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.right-column {
+  border-left: 2px solid #0078d4;
+}
+h2 {
+  color: #0078d4;
+  border-bottom: 2px solid #0078d4;
+  margin-bottom: 10px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin-bottom: 10px;
+}
+.section {
+  margin-bottom: 20px;
+}
+.skills,
+.certifications {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.skills div,
+.certifications div {
+  width: 50%;
+  box-sizing: border-box;
+}
+.job-title {
+  font-size: 1em;
+}
+.contact-info {
+  font-size: 0.8em;
+}
+.hover:hover {
+  background-color: #3c94d6;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+  .hidden {
+    display: block;
+  }
+  .title-employment {
+    font-weight: bold;
+    font-size: large;
+  }
+}
+a {
+  text-align: center;
+  color: #05133a;
+}
+.transparency:hover {
+  color: #0c0c0c;
+  font-size: 23px;
+  text-decoration: none;
+  background-color: #3e61ad;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+.hidden {
+  display: none;
+}
+
+.transparency::after {
+  text-align: center;
+  color: #05133a;
+  font-size: 238px;
+  text-decoration: none;
+  background-color: #3e61ad;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+footer {
+  background: #1592f1;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+footer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer form label {
+  margin-top: 10px;
+}
+footer form input,
+footer form textarea,
+footer form button {
+  margin-top: 5px;
+  padding: 10px;
+  width: 80%;
+}
+footer .copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #ddd;
+    text-align: center;
+}
+
+.internal-ul {
+  padding-left: 0rem;
+  display: block;  
+  position: relative;
+}
+
+.leftpading {
+  padding-left: 0rem;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 50px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.internal-ul a {
+  display: block;  
+  position: relative;
+  text-align: center;  
+  padding: 10px;  
+  text-decoration: none;
+  bottom: -100px;
+}
+.internal-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.internal-ul li {
+  margin-bottom: 15px;
+}
+
+.download-btn {
+  display: inline-block;
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #001aff;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.download-btn:hover {
+  background-color: #010913;
+  /* cursor: not-allowed; */
+}

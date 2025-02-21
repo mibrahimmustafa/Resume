@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Verification - Drag and Drop</title>
+<link rel="stylesheet" href="hummanCheck.css">
+</head>
+<body>
+    <h1>Are You Human?</h1>
+    <p>Drag the orange circle into the blue box to verify you are human.</p>
+
+    <div class="drag-container">
+        <div id="draggable" class="draggable" draggable="true">Drag Me</div>
+        <div id="droppable" class="droppable"></div>
+    </div>
+
+    <div id="message"></div>
+
+    <script>
+        const draggable = document.getElementById('draggable');
+        const droppable = document.getElementById('droppable');
+        const message = document.getElementById('message');
+
+        // Handle drag events
+        draggable.addEventListener('dragstart', (e) => {
+            e.dataTransfer.setData('text', 'dragged');
+        });
+
+        droppable.addEventListener('dragover', (e) => {
+            e.preventDefault(); // Allow drop
+        });
+
+        droppable.addEventListener('drop', (e) => {
+            e.preventDefault();
+            const data = e.dataTransfer.getData('text');
+            if (data === 'dragged') {
+                droppable.classList.add('success');
+                message.textContent = 'Verification successful! Redirecting...';
+                setTimeout(() => {
+                    window.location.href = 'index.html'; // Redirect to index.html
+                }, 2000); // Wait 2 seconds before redirecting
+            }
+        });
+    </script>
+</body>
+</html>

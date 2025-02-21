@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+.drag-container {
+    margin: 20px auto;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.draggable {
+    width: 80px;
+    height: 80px;
+    background-color: #f0ad4e;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    color: white;
+    font-weight: bold;
+    cursor: grab;
+}
+.droppable {
+    width: 100px;
+    height: 100px;
+    background-color: #5bc0de;
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    display: inline-block;
+}
+.success {
+    background-color: #5cb85c !important;
+    border: 2px solid #4cae4c;
+}
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+}
